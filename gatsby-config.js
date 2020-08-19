@@ -6,7 +6,7 @@ module.exports = {
       summary: `who lives to headbutt keyboards and make web apps that sometimes work.`,
     },
     description: `A programming blog that adds incentive to project creation, learning and community development.`,
-    siteUrl: ``,
+    siteUrl: `https://jarecturner.netlify.app`,
     social: {
       github: `ormus395`,
     },
