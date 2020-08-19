@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Headbutt Keyboards`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Jarec Turner`,
+      summary: `who lives to headbutt keyboards and make web apps that sometimes work.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A programming blog that adds incentive to project creation, learning and community development.`,
+    siteUrl: ``,
     social: {
-      twitter: `kylemathews`,
+      github: `ormus395`,
     },
   },
   plugins: [
