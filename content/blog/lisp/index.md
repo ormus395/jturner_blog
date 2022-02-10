@@ -45,6 +45,40 @@ Prefix notation is where the operator is before the operands.
 (> 3 4)
 ```
 
-### That's all for not folks
+## Defining Functions
 
-In an edit to this article, I'll be going over function definitions and branching. Further down the road recursion will also be covered. Thanks for reading!
+Functions are the fundemental building block of functional programming. A good way of thinking about what a function in Scheme or any other programming language is the mathematical function. 
+
+A function in math takes an argument: like x, and does a procedure or operation, x + 2, and returns the value from the operation. In computer programming, a function is just like that, but computer programming functions are not bound to just numbers.
+
+For example, in Scheme, you can creat a function that determines what type of Igneas rock you have.
+
+```
+; First, we need to use the define keyword to create the function
+(define (functionName value value value)
+    ; this would be the function body
+)
+```
+
+If you noticed, we used the keyword _define_ to tell Scheme we're going to be creating a function. Followed by a parenthesis, inside the parathesis is the function name, followed by the parameters of the function.
+Also notice each function parameter is sperated not by commas, like other programming langauges, but by spaces.
+
+Lets continue defining our igneas function.
+```
+(define (igneas darkMin)
+    ; cond is a keyword used for branching
+    ; I'll cover types of branching in scheme later
+    (cond
+        ((< darkMin 35) "Leucocratic")
+        ((< darkMin 65) "Mesocratic")
+        ((< darkMin 90) "Melanocratic")
+        (#t "Ultramafic")
+    )
+)
+```
+
+Notice how Scheme does not have a return statement. So what Does the above function return? Well, it implicitly returns a result from a procedure. In the case of the *igneas function* we have on expression for a procedure: the cond expression. The cond expression is a lot like the _switch case_ expression found in other languages. If you are unfamiliar with types of branching, stay tuned, because I will be covering it in another update.
+
+To summarize functions in scheme, they're the basic building block of the program. They're created by using the _define_ keyword, take arguments and implicitly return the value from an expression.
+
+## Stay tuned, an update more on function and branching will be coming!
